@@ -10,13 +10,13 @@
 
 * * *
 
-Dans le cadre de cet examen, on vous demande de reprogrammer une version simplifiée du célèbre jeu [Snake](https://fr.wikipedia.org/wiki/Snake_(genre_de_jeu_vidéo)).
+Dans le cadre de cet examen, on vous demande de reprogrammer une version simplifiée du célèbre jeu *[Snake](https://fr.wikipedia.org/wiki/Snake_(genre_de_jeu_vidéo))*.
 
 ## Les règles du jeu
 
 * Pour démarrer le jeu, l'utilisateur soumet le formulaire `.game__play`. Pour le cacher, il suffit de lui ajouter la classe `hide`.  ![Cacher le formulaire à sa soumission.](./img/hide-form.gif)
 
-* Le serpent commence son parcours au milieu du canvas. Il se déplace de 20px dans une direction que l’utilisateur peut changer. Gauche, droite, bas, haut. À l’initialisation du jeu, la première direction est arbitrairement définie vers la droite. Au début, le serpent a une taille de 4 unités.![Le jeu commence et le serpent se déplace vers la droite.](./img/start.gif)
+* Le serpent commence son parcours au milieu du canvas. Il se déplace de 20px dans une direction que l’utilisateur peut changer. Gauche, Droite, Bas, Haut. À l’initialisation du jeu, la première direction est arbitrairement définie vers la droite. Au début, le serpent a une taille de 4 unités.![Le jeu commence et le serpent se déplace vers la droite.](./img/start.gif)
 
 * L'utilisateur peut, avec les flèches du clavier, changer cette direction.
   * Quand le serpent se déplace vers la gauche ou vers la droite, il ne peut pas directement se déplacer dans la direction opposée. Il doit d'abord faire un coup vers le bas ou le haut.
@@ -30,11 +30,11 @@ Dans le cadre de cet examen, on vous demande de reprogrammer une version simplif
 
 * Le serpent ne peut pas se mordre, sinon le jeu se termine également.![eat-self](./img/eat-self.gif)
 
-* Quand le jeu se termine, le formulaire `.game__play` s'affiche à l'écran. Il faut mettre dans le champ `input[type=hidden]` le score courant du joueur ainsi qu’un message indiquant la raison de la fin. Ce message doit se trouver dans la balise `p.game__play__message`.![Quand le jeu se termine, un message apparait pour indiquer la cause.](./img/message.gif)
+* Quand le jeu se termine, le formulaire `.game__play` s'affiche à l'écran. Il faut mettre dans le champ `.game__play__score` le score courant du joueur ainsi qu’un message indiquant la raison de la fin. Ce message doit se trouver dans la balise `p.game__play__message`.![Quand le jeu se termine, un message apparait pour indiquer la cause.](./img/message.gif)
 
 ## Contraintes
 
-* Le serpent commence son parcours au milieu du canvas. Ainsi s'il est composé de 6 unités, 3 doivent se trouver dans la première moitié du canvas tandis que les 3 autres doivent se trouver dans l'autre moitié. Notez que la position doit coller avec le repère visuel en arrière-plan.![Le serpent est placé au millieu.](./img/middle.jpg)
+* Le serpent commence son parcours au milieu du canvas. Ainsi s'il est composé de 6 unités, 3 doivent se trouver dans la première moitié du canvas tandis que les 3 autres doivent se trouver dans l'autre moitié. La position de départ du premier item n'est pas réellement aléatoire, elle doit correspondre avec le début d'une colonne. Pour les éléments suivants c'est très simple, il suffit d'augmenter d'une fois la taille de l'unité.![Le serpent est placé au milieu.](./img/middle.jpg)
 * La nourriture est générée à une position qui donne l'impression d'être dans une case.
 * Le serpent ainsi que la pomme sont des éléments du jeu qui sont capables de s'effacer tout seuls. Il n'est donc pas souhaitable, dans la boucle d'animation, d'effacer l'entièreté du canvas. Il suffit d'appeler la méthode `clear` du serpent qui appelle la fonction `clear` sur chacun des éléments du serpent.
 

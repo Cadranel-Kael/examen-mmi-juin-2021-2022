@@ -87,7 +87,7 @@ table {
 }
 .game__canvas-container__snake {
   box-shadow: 3px 3px 13px 3px rgba(0, 0, 0, 0.5);
-  background-image: url(../images/bg.svg?349a31c9240e84f720ffdc873446c84b);
+  background-image: url(../images/bg.svg?da00c4611e540c3b4409300376d6320a);
   background-size: cover;
   z-index: 1;
   position: absolute;

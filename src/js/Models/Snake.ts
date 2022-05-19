@@ -16,7 +16,7 @@ export class Snake extends Canvas {
 
     constructor(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D, current: { direction: direction }, apples: Apple[], score: Score, replay: (message: string) => void) {
         super(canvas, ctx, {
-            x: canvas.width / 2 - (Math.ceil(settings.snake.initialCount / 2) * settings.snake.unit),
+            x: canvas.width / 2 - ((Math.ceil(settings.snake.initialCount / 2) + 1) * settings.snake.unit),
             y: canvas.height / 2 - settings.snake.unit
         });
         this.score = score;
@@ -78,7 +78,7 @@ export class Snake extends Canvas {
 
     private isEating() {
         this.apples.forEach((food: Apple) => {
-            if (food.position.x == this.position.x && food.position.y == this.position.y) {
+            if (compare(this.position,food.position)) {
                 food.reset();
                 this.growingUp();
                 this.score.increment();
@@ -121,7 +121,7 @@ export class Snake extends Canvas {
 
     reset() {
         this.position = {
-            x: this.canvas.width / 2 - (Math.ceil(settings.snake.initialCount / 2) * settings.snake.unit),
+            x: this.canvas.width / 2 - ((Math.ceil(settings.snake.initialCount / 2) + 1) * settings.snake.unit),
             y: this.canvas.height / 2 - settings.snake.unit
         }
         this.current.direction = direction.right;

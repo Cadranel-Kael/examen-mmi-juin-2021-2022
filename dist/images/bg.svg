@@ -3,10 +3,11 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#CCC0AE;enable-background:new    ;}
-	.st1{fill:#E5DBCF;enable-background:new    ;}
+	.st0{fill:#CCC0AE;}
+	.st1{fill:#E5DBCF;}
 	.st2{opacity:0.5;fill:#CCC0AE;enable-background:new    ;}
 	.st3{opacity:0.5;fill:#E5DBCF;enable-background:new    ;}
+	.st4{fill:none;}
 </style>
 <rect class="st0" width="20" height="600"/>
 <rect x="20" class="st1" width="20" height="600"/>
@@ -68,4 +69,6 @@
 <rect y="540" class="st3" width="600" height="20"/>
 <rect y="560" class="st2" width="600" height="20"/>
 <rect y="580" class="st3" width="600" height="20"/>
+<line class="st4" x1="300" y1="-31.1" x2="300" y2="627.7"/>
+<line class="st4" x1="-29.4" y1="300" x2="629.4" y2="300"/>
 </svg>
