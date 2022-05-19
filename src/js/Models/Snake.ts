@@ -37,11 +37,11 @@ export class Snake extends Canvas {
     draw() {
         this.update();
         this.isEating();
+        this.isBitingItsTail();
+        this.isGoingOutside();
         this.tail.forEach((item) => {
             item.draw();
         });
-        this.isGoingOutside();
-        this.isBitingItsTail();
     }
 
     update() {
