@@ -34,7 +34,7 @@ Dans le cadre de cet examen, on vous demande de reprogrammer une version simplif
 
 ## Contraintes
 
-* Le serpent commence son parcours au milieu du canvas. Ainsi s'il est composé de 6 unités, 3 doivent se trouver dans la première moitié du canvas tandis que les 3 autres doivent se trouver dans l'autre moitié. La position de départ du premier item n'est pas réellement aléatoire, elle doit correspondre avec le début d'une colonne. Pour les éléments suivants c'est très simple, il suffit d'augmenter d'une fois la taille de l'unité.![Le serpent est placé au milieu.](./img/middle.jpg)
+* Le serpent commence son parcours au milieu du canvas. Ainsi s'il est composé de 6 unités, 3 doivent se trouver dans la première moitié du canvas tandis que les 3 autres doivent se trouver dans l'autre moitié. La position de départ du premier item doit correspondre avec le début d'une colonne. Pour les éléments suivants c'est très simple, il suffit d'augmenter d'une fois la taille de l'unité.![Le serpent est placé au milieu.](./img/middle.jpg)
 * La nourriture est générée à une position qui donne l'impression d'être dans une case.
 * Le serpent ainsi que la pomme sont des éléments du jeu qui sont capables de s'effacer tout seuls. Il n'est donc pas souhaitable, dans la boucle d'animation, d'effacer l'entièreté du canvas. Il suffit d'appeler la méthode `clear` du serpent qui appelle la fonction `clear` sur chacun des éléments du serpent.
 
