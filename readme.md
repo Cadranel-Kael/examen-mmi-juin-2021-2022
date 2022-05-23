@@ -57,3 +57,9 @@ Comme vous pouvez le voir, il y a déjà un peu de code qui vous est fourni pour
   * La taille en pixel d'une unité du serpent, sa couleur ainsi que le nombre d’unités au démarrage.
   * Le rayon et la couleur du cercle qui représente la nourriture.
   * Les sélecteurs CSS pour le score ainsi que le formulaire pour démarrer le jeu.
+
+
+
+https://user-images.githubusercontent.com/8074967/169312446-1113af07-929c-404a-bb09-10db987746f3.mp4
+
+
