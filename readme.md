@@ -12,7 +12,7 @@
 
 Dans le cadre de cet examen, on vous demande de reproduire une version simplifiée du célèbre jeu *[Snake](https://fr.wikipedia.org/wiki/Snake_(genre_de_jeu_vidéo))*.
 
-## Les règles du jeu
+## Les règles du jeu   
 
 * Pour démarrer le jeu (et donc sa boucle d'animation), l'utilisateur soumet le formulaire `.game__play`. Pour le cacher, il suffit de lui ajouter la classe `hide`.![Cacher le formulaire à sa soumission.](./img/hide-form.gif)
 
