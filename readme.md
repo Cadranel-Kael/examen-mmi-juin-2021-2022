@@ -10,7 +10,7 @@
 
 * * *
 
-Dans le cadre de cet examen, on vous demande de reproduire une version simplifiée du célèbre jeu *[Snake](https://fr.wikipedia.org/wiki/Snake_(genre_de_jeu_vidéo))*.
+Dans le cadre de cet examen, on vous demande de reproduire une version simplifiée du célèbre jeu *[Snake](https://fr.wikipedia.org/wiki/Snake_(genre_de_jeu_vidéo))*. Voici une version finale du jeu.
 
 ## Les règles du jeu
 
@@ -26,7 +26,7 @@ Dans le cadre de cet examen, on vous demande de reproduire une version simplifi�
 
 * Pour grandir et gagner des points, le serpent mange des pommes. (Représenté ici par un cercle.) Quand le serpent passe sur une case avec une pomme, alors il grandit d'une unité. Le score du jeu est incrémenté d'un point.![eat](./img/eat.gif)
 
-* Le serpent ne peut pas sortir du cadre. S'il sort, alors le jeu se termine.![Le serpent sort du cadre, le jeu se termine](./img/go-out.gif)
+* Le serpent ne peut pas sortir du cadre. S'il sort, alors le jeu se termine.![Le serpent sort du cadre, le jeu se termine.](./img/go-out.gif)
 
 * Le serpent ne peut pas se mordre, sinon le jeu se termine également.![eat-self](./img/eat-self.gif)
 
@@ -51,7 +51,7 @@ Comme vous pouvez le voir, il y a déjà un peu de code qui vous est fourni pour
 * La classe abstraite `Canvas` prépare le terrain pour des classes de filles qui ont besoin d'un *contexte*, d’un *canvas* et d'une *position*.
 * La classe `Score` représente le score du joueur. Il est à 0 quand on commence le jeu et s'incrémente à chaque fois que le serpent grandit.
 * Dans le dossier `Types` vous retrouvez deux types supplémentaires. D'une part le type `direction` pour définir la direction courante. D'autre part, le type `position` pour représenter les coordonnées `x` et `y` d'un objet.
-* Dans le fichier `settings.ts` vous retrouvez tous les paramètres du jeu :
+* Dans le fichier `settings.ts`, vous retrouvez tous les paramètres du jeu :
   * Les sélecteurs CSS pour les 2 canvas ainsi que son type.
   * Le taux de rafraichissement pour le serpent, exprimé en images par seconde.
   * La taille en pixel d'une unité du serpent, sa couleur ainsi que le nombre d’unités au démarrage.
@@ -61,5 +61,4 @@ Comme vous pouvez le voir, il y a déjà un peu de code qui vous est fourni pour
 
 
 https://user-images.githubusercontent.com/8074967/169312446-1113af07-929c-404a-bb09-10db987746f3.mp4
-
 
