@@ -9,7 +9,7 @@ export abstract class Shape {
     protected position: Position;
     protected readonly speed: number;
     protected direction: number;
-    color: Hsl | Rgb;
+    color: Hsl | Rgb | string;
     protected canvas: Canvas;
 
 

@@ -2,12 +2,14 @@ export const settings = {
     canvas: {
         snake: {domSelector: "#snake", ctx: "2d"},
         food: {domSelector: "#food", ctx: "2d"},
-        fps: 4
+        fps: 4,
+        size: {width: 600, height: 600},
     },
     snake: {
         unit: 20,
         color: "#252422",
-        initialCount: 6
+        initialCount: 5,
+        borderColor: "white",
     },
     food: {radius: 10, color: "#EB5E28"},
     score: {

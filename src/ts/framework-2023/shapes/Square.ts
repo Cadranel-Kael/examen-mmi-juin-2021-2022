@@ -10,10 +10,9 @@ export class Square extends Shape implements Animatable{
         this.side = square.side;
     }
 
-    draw() {
+    draw(): void {
         this.ctx.fillStyle = `${this.color}`;
         this.ctx.fillRect(this.position.x, this.position.y, this.side, this.side);
-        return this;
     }
 
     clear(): void {
